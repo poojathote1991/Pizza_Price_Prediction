@@ -1,0 +1,96 @@
+{
+	"info": {
+		"_postman_id": "30cca168-598b-43ca-bd47-bb2212a8c354",
+		"name": "Pizza_coolection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28205121"
+	},
+	"item": [
+		{
+			"name": " http://127.0.0.1:5000",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000"
+				}
+			},
+			"response": []
+		},
+		{
+			"name": " http://127.0.0.1:8080/predicted_price",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "diameter",
+							"value": "12",
+							"type": "text"
+						},
+						{
+							"key": "topping",
+							"value": "chicken",
+							"type": "text"
+						},
+						{
+							"key": "variant",
+							"value": "BBQ_meat_fiesta",
+							"type": "text"
+						},
+						{
+							"key": "size",
+							"value": "medium",
+							"type": "text"
+						},
+						{
+							"key": "extra_sauce",
+							"value": "yes",
+							"type": "text"
+						},
+						{
+							"key": "extra_cheese",
+							"value": "no",
+							"type": "text"
+						},
+						{
+							"key": "extra_mushrooms",
+							"value": "yes",
+							"type": "text"
+						},
+						{
+							"key": "company",
+							"value": "C",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8080/predicted_price",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"predicted_price"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
